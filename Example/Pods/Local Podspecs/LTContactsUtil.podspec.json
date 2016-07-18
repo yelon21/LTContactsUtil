@@ -1,0 +1,22 @@
+{
+  "name": "LTContactsUtil",
+  "version": "0.1.0",
+  "summary": "个人工具",
+  "description": "个人工具 通讯录工具.",
+  "homepage": "https://github.com/yelon21/LTContactsUtil",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "yelon21": "254956982@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/yelon21/LTContactsUtil.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "6.0"
+  },
+  "source_files": "LTContactsUtil/Classes/**/*"
+}

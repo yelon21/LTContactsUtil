@@ -1,0 +1,16 @@
+PODS:
+  - LTContactsUtil (0.1.0)
+
+DEPENDENCIES:
+  - LTContactsUtil (from `../`)
+
+EXTERNAL SOURCES:
+  LTContactsUtil:
+    :path: ../
+
+SPEC CHECKSUMS:
+  LTContactsUtil: 2c417a99f560f349d58fed97f00c30a033105968
+
+PODFILE CHECKSUM: 31ab0bcb9ecfebbd71bc112df50db809acbf1f2a
+
+COCOAPODS: 1.0.0

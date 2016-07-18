@@ -1,0 +1,6 @@
+framework module Pods_LTContactsUtil_Tests {
+  umbrella header "Pods-LTContactsUtil_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

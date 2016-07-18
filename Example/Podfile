@@ -1,0 +1,10 @@
+use_frameworks!
+
+target 'LTContactsUtil_Example' do
+  pod 'LTContactsUtil', :path => '../'
+
+  target 'LTContactsUtil_Tests' do
+    inherit! :search_paths
+    
+  end
+end
