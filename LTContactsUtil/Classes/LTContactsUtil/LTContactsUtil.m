@@ -24,7 +24,7 @@
 
     if (self = [super init]) {
         
-        
+        self.allMobileNoArray;
     }
     return self;
 }
@@ -58,16 +58,33 @@
 }
 
 + (BOOL)LT_checkAuthorizationStatus{
+   
+//    Class class = NSClassFromString(@"CNContactStore");
+//    
+//    if (class) {
+//        
+//        return [LTContactStore LT_checkAuthorizationStatus];
+//    }
+//    else{
+//        
+//        return [LTAddressBookStore LT_checkAuthorizationStatus];
+//    }
     
+    LTConAuthorizationStatus status = [self LT_getAuthorizationStatus];
+    return status!=LTConAuthorizationStatus_Denied;
+}
+
++ (LTConAuthorizationStatus)LT_getAuthorizationStatus{
+
     Class class = NSClassFromString(@"CNContactStore");
     
     if (class) {
         
-        return [LTContactStore LT_checkAuthorizationStatus];
+        return [LTContactStore LT_getAuthorizationStatus];
     }
     else{
         
-        return [LTAddressBookStore LT_checkAuthorizationStatus];
+        return [LTAddressBookStore LT_getAuthorizationStatus];
     }
 }
 @end

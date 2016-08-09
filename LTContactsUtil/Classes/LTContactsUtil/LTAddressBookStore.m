@@ -183,15 +183,32 @@
     return self.personArray;
 }
 
-+ (BOOL)LT_checkAuthorizationStatus{
+//+ (BOOL)LT_checkAuthorizationStatus{
+//    
+//    if (floor(NSFoundationVersionNumber) > NSFoundationVersionNumber_iOS_5_1) {
+//        
+//        if (ABAddressBookGetAuthorizationStatus() != kABAuthorizationStatusAuthorized) {
+//            
+//            return NO;
+//        }
+//    }
+//    return YES;
+//}
+
++ (LTConAuthorizationStatus)LT_getAuthorizationStatus{
     
-    if (floor(NSFoundationVersionNumber) > NSFoundationVersionNumber_iOS_5_1) {
-        
-        if (ABAddressBookGetAuthorizationStatus() != kABAuthorizationStatusAuthorized) {
-            
-            return NO;
-        }
+    ABAuthorizationStatus status = ABAddressBookGetAuthorizationStatus();
+    
+    switch (status) {
+        case kABAuthorizationStatusNotDetermined:
+            return LTConAuthorizationStatus_NotDetermined;
+        case kABAuthorizationStatusDenied:
+            return LTConAuthorizationStatus_Denied;
+        case kABAuthorizationStatusAuthorized:
+            return LTConAuthorizationStatus_Authorized;
+        default:
+            return LTConAuthorizationStatus_Denied;
+            break;
     }
-    return YES;
 }
 @end

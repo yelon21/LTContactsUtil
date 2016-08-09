@@ -9,6 +9,13 @@
 #import <Foundation/Foundation.h>
 #import "LTContactsInfo.h"
 
+typedef NS_ENUM(NSInteger, LTConAuthorizationStatus)
+{
+    LTConAuthorizationStatus_NotDetermined = 0,
+    LTConAuthorizationStatus_Denied,
+    LTConAuthorizationStatus_Authorized
+};
+
 @interface LTContactsBase : NSObject
 
 @property (nonatomic, assign) NSMutableArray <LTContactsInfo *> *contactsArray;
@@ -17,5 +24,5 @@
 //- (NSMutableArray <ContactsInfo *>*)getContacts;
 
 + (BOOL)LT_checkAuthorizationStatus;
-
++ (LTConAuthorizationStatus)LT_getAuthorizationStatus;
 @end

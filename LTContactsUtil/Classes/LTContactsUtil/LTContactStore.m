@@ -97,9 +97,27 @@
     }
     return self.personArray;
 }
+//
+//+(BOOL)LT_checkAuthorizationStatus{
+//
+//    return [CNContactStore authorizationStatusForEntityType:CNEntityTypeContacts] == CNAuthorizationStatusAuthorized;
+//}
 
-+(BOOL)LT_checkAuthorizationStatus{
-
-    return [CNContactStore authorizationStatusForEntityType:CNEntityTypeContacts] == CNAuthorizationStatusAuthorized;
++ (LTConAuthorizationStatus)LT_getAuthorizationStatus{
+    
+    CNAuthorizationStatus status = [CNContactStore authorizationStatusForEntityType:CNEntityTypeContacts];
+    
+    switch (status) {
+        case CNAuthorizationStatusNotDetermined:
+            return LTConAuthorizationStatus_NotDetermined;
+        case CNAuthorizationStatusDenied:
+            return LTConAuthorizationStatus_Denied;
+        case CNAuthorizationStatusAuthorized:
+            return LTConAuthorizationStatus_Authorized;
+        default:
+            return LTConAuthorizationStatus_Denied;
+            break;
+    }
 }
+
 @end
