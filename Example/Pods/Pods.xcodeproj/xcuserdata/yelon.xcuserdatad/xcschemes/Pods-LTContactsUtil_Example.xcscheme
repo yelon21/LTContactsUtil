@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "0830"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,8 +14,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C348AF05545BA7BFA819B9549700C5F5"
-               BuildableName = "Pods_LTContactsUtil_Example.framework"
+               BlueprintIdentifier = "08E6604D8FE6C3F9EF0A7552FB95FFB3"
+               BuildableName = "libPods-LTContactsUtil_Example.a"
                BlueprintName = "Pods-LTContactsUtil_Example"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
@@ -45,8 +45,8 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C348AF05545BA7BFA819B9549700C5F5"
-            BuildableName = "Pods_LTContactsUtil_Example.framework"
+            BlueprintIdentifier = "08E6604D8FE6C3F9EF0A7552FB95FFB3"
+            BuildableName = "libPods-LTContactsUtil_Example.a"
             BlueprintName = "Pods-LTContactsUtil_Example"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>

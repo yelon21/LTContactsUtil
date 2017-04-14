@@ -15,4 +15,9 @@
     return NO;
 }
 
++ (LTConAuthorizationStatus)LT_getAuthorizationStatus{
+
+    return LTConAuthorizationStatus_NotDetermined;
+}
+
 @end

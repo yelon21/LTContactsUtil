@@ -23,7 +23,7 @@
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
 
-    LTContactsUtil *ss = [[LTContactsUtil alloc]init];
+   // LTContactsUtil *ss = [[LTContactsUtil alloc]init];
     
 //    NSArray *array  = [ss contactsArray];
 //    NSLog(@"array = %@",array);

@@ -24,7 +24,7 @@
 
     if (self = [super init]) {
         
-        self.allMobileNoArray;
+        [self allMobileNoArray];
     }
     return self;
 }
