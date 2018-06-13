@@ -9,6 +9,7 @@
 #import "LYViewController.h"
 //#import <LTContactsUtil/LTContactsUIUtil.h>
 #import "LTContactsUtil.h"
+#import <LTContactsUIUtil.h>
 @interface LYViewController ()
 
 @end
@@ -23,17 +24,23 @@
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
 
-   // LTContactsUtil *ss = [[LTContactsUtil alloc]init];
-    
+//    LTContactsUtil *ss = [[LTContactsUtil alloc]init];
+//
 //    NSArray *array  = [ss contactsArray];
 //    NSLog(@"array = %@",array);
+    
+    [LTContactsUtil LT_checkAuthorizationStatus:^(BOOL authorized) {
+        
+        NSLog(@"authorized = %@",@(authorized));
+        NSLog(@"authorized = %@",@(authorized));
+    }];
 //    LTContactsUIUtil *contactsUIUtil = [[LTContactsUIUtil alloc]init];
-//    
+//
 //    contactsUIUtil.telOnlyNumber = YES;
-//    
+//
 //    [contactsUIUtil showAddressBookUIFromVC:self
 //                                       didSelect:^(NSString *name, NSString *tel) {
-//                                           
+//
 //                                           NSLog(@"name=%@",name);
 //                                           NSLog(@"tel=%@",tel);
 //                                       }];

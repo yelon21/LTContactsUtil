@@ -13,8 +13,6 @@
 
 @property(nonatomic,assign) BOOL telOnlyNumber;
 
-+ (BOOL)checkAuthorizationStatus;
-
 - (void)showAddressBookUIFromVC:(UIViewController *)viewCon
                       didSelect:(void(^)(NSString *name,NSString *tel))didSelectPerson;
 @end

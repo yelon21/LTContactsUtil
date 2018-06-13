@@ -16,18 +16,6 @@
 
 @implementation LTAddressBookSelect
 
-+ (BOOL)checkAuthorizationStatus{
-    
-    if (floor(NSFoundationVersionNumber) > NSFoundationVersionNumber_iOS_5_1) {
-        
-        if (ABAddressBookGetAuthorizationStatus() != kABAuthorizationStatusAuthorized) {
-
-            return NO;
-        }
-    }
-    return YES;
-}
-
 - (void)showAddressBookUIFromVC:(UIViewController *)viewCon didSelect:(void(^)(NSString *name,NSArray *tels))didSelectPerson{
 
     self.didSelectPerson = didSelectPerson;
@@ -118,13 +106,13 @@
             switch (j) {
                 case 0: {// Phone number
                     NSString *tel = [[(__bridge NSString*)value stringByReplacingOccurrencesOfString:@"-" withString:@""] stringByReplacingOccurrencesOfString:@" " withString:@""];
-                    NSLog(@"tel=%@",tel);
+
                     [tels addObject:tel];
                     break;
                 }
                 case 1: {// Email
                     NSString *email = (__bridge NSString*)value;
-                    NSLog(@"email=%@",email);
+                    
                     break;
                 }
             }
@@ -132,8 +120,6 @@
         }
         CFRelease(valuesRef);
     }
-    
-    NSLog(@"tels=%@",tels);
     
     if (self.didSelectPerson) {
         
@@ -163,7 +149,6 @@
 - (void)peoplePickerNavigationControllerDidCancel:(ABPeoplePickerNavigationController *)peoplePicker{
     
     [peoplePicker dismissViewControllerAnimated:YES completion:nil];
-    NSLog(@"取消");
 }
 
 

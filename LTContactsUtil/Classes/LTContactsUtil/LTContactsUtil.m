@@ -57,21 +57,21 @@
     return self.store.contactsArray;
 }
 
-+ (BOOL)LT_checkAuthorizationStatus{
++ (void)LT_checkAuthorizationStatus:(void (^)(BOOL))resultBlock{
    
-//    Class class = NSClassFromString(@"CNContactStore");
-//    
-//    if (class) {
-//        
-//        return [LTContactStore LT_checkAuthorizationStatus];
-//    }
-//    else{
-//        
-//        return [LTAddressBookStore LT_checkAuthorizationStatus];
-//    }
-    
-    LTConAuthorizationStatus status = [self LT_getAuthorizationStatus];
-    return status!=LTConAuthorizationStatus_Denied;
+    if (resultBlock) {
+        
+        Class class = NSClassFromString(@"CNContactStore");
+        
+        if (class) {
+            
+            return [LTContactStore LT_checkAuthorizationStatus:resultBlock];
+        }
+        else{
+            
+            return [LTAddressBookStore LT_checkAuthorizationStatus:resultBlock];
+        }
+    }
 }
 
 + (LTConAuthorizationStatus)LT_getAuthorizationStatus{

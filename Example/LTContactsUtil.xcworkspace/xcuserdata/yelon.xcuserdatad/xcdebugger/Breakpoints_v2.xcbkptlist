@@ -41,14 +41,14 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "../LTContactsUtil/Classes/LTContactsUIUtil/LTContactsUIUtil.m"
-            timestampString = "490540884.324016"
+            filePath = "../LTContactsUtil/Classes/LTContactsUIUtil/LTAddressBookSelect.m"
+            timestampString = "550566389.021474"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "112"
-            endingLineNumber = "112"
-            landmarkName = "-showSelectFrom:name:tels:"
-            landmarkType = "5">
+            startingLineNumber = "135"
+            endingLineNumber = "135"
+            landmarkName = "LTAddressBookSelect"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -57,13 +57,188 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "LTContactsUtil/LYViewController.m"
-            timestampString = "491410313.706472"
+            filePath = "../LTContactsUtil/Classes/LTContactsUIUtil/LTAddressBookSelect.m"
+            timestampString = "550566389.021593"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
+            startingLineNumber = "145"
+            endingLineNumber = "145"
+            landmarkName = "LTAddressBookSelect"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../LTContactsUtil/Classes/LTContactsUIUtil/LTAddressBookSelect.m"
+            timestampString = "550566389.021708"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
+            landmarkName = "-didSelectPerson:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LTContactsUtil/LYViewController.m"
+            timestampString = "550566389.021839"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
             landmarkName = "-touchesBegan:withEvent:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[LYViewController touchesBegan:withEvent:]"
+                  moduleName = "LTContactsUtil_Example"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yelon/Documents/ios%E4%BB%A3%E7%A0%81/GitHub/LTContactsUtil/Example/LTContactsUtil/LYViewController.m"
+                  timestampString = "550565920.411968"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "77">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__43-[LYViewController touchesBegan:withEvent:]_block_invoke"
+                  moduleName = "LTContactsUtil_Example"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yelon/Documents/ios%E4%BB%A3%E7%A0%81/GitHub/LTContactsUtil/Example/LTContactsUtil/LYViewController.m"
+                  timestampString = "550565920.414227"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "24">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../LTContactsUtil/Classes/LTContactsUtil/LTContactStore.m"
+            timestampString = "550566389.02194"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "105"
+            endingLineNumber = "105"
+            landmarkName = "+LT_checkAuthorizationStatus:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../LTContactsUtil/Classes/LTContactsUtil/LTContactStore.m"
+            timestampString = "550566389.0225461"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "116"
+            endingLineNumber = "116"
+            landmarkName = "+LT_checkAuthorizationStatus:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../LTContactsUtil/Classes/LTContactsUtil/LTAddressBookStore.m"
+            timestampString = "550566389.02293"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "198"
+            endingLineNumber = "198"
+            landmarkName = "+LT_checkAuthorizationStatus:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "+[LTAddressBookStore LT_checkAuthorizationStatus:]"
+                  moduleName = "LTContactsUtil_Example"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yelon/Documents/ios%E4%BB%A3%E7%A0%81/GitHub/LTContactsUtil/LTContactsUtil/Classes/LTContactsUtil/LTAddressBookStore.m"
+                  timestampString = "550566389.2129591"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "198"
+                  endingLineNumber = "198"
+                  offsetFromSymbolStart = "148">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__50+[LTAddressBookStore LT_checkAuthorizationStatus:]_block_invoke"
+                  moduleName = "LTContactsUtil_Example"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yelon/Documents/ios%E4%BB%A3%E7%A0%81/GitHub/LTContactsUtil/LTContactsUtil/Classes/LTContactsUtil/LTAddressBookStore.m"
+                  timestampString = "550566389.2206"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "200"
+                  endingLineNumber = "200"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__destroy_helper_block_.53"
+                  moduleName = "LTContactsUtil_Example"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yelon/Documents/ios%E4%BB%A3%E7%A0%81/GitHub/LTContactsUtil/LTContactsUtil/Classes/LTContactsUtil/LTAddressBookStore.m"
+                  timestampString = "550566389.224082"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "198"
+                  endingLineNumber = "198"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../LTContactsUtil/Classes/LTContactsUtil/LTAddressBookStore.m"
+            timestampString = "550566389.023484"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "200"
+            endingLineNumber = "200"
+            landmarkName = "+LT_checkAuthorizationStatus:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

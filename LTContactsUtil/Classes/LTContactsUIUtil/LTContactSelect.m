@@ -17,12 +17,6 @@
 
 @implementation LTContactSelect
 
-+ (BOOL)checkAuthorizationStatus{
-
-    CNAuthorizationStatus status = [CNContactStore authorizationStatusForEntityType:CNEntityTypeContacts];
-    return status == CNAuthorizationStatusAuthorized;
-}
-
 - (void)showAddressBookUIFromVC:(UIViewController *)viewCon didSelect:(void(^)(NSString *name,NSArray *tels))didSelectPerson{
     
     self.didSelectPerson = didSelectPerson;
@@ -56,8 +50,6 @@
         CNPhoneNumber *phoneNumber = value.value;
         NSString *phone = phoneNumber.stringValue;
         
-        NSLog(@"%@=%@",fullName,phone);
-        
         if (self.didSelectPerson) {
             
             self.didSelectPerson(fullName,@[phone]);
@@ -79,8 +71,6 @@
     
     CNPhoneNumber *phoneNumber = contactProperty.value;
     NSString *phone = phoneNumber.stringValue;
-    
-    NSLog(@"%@=%@",fullName,phone);
     
     if (self.didSelectPerson) {
         

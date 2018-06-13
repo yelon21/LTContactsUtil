@@ -98,10 +98,33 @@
     return self.personArray;
 }
 //
-//+(BOOL)LT_checkAuthorizationStatus{
-//
-//    return [CNContactStore authorizationStatusForEntityType:CNEntityTypeContacts] == CNAuthorizationStatusAuthorized;
-//}
++(void)LT_checkAuthorizationStatus:(void (^)(BOOL))resultBlock{
+    
+    if (resultBlock) {
+        
+        LTConAuthorizationStatus status = [self LT_getAuthorizationStatus];
+        if (status == LTConAuthorizationStatus_Authorized) {
+            
+            resultBlock(YES);
+        }
+        else{
+            CNContactStore *contactStore = [[CNContactStore alloc]init];
+            
+            [contactStore requestAccessForEntityType:CNEntityTypeContacts
+                                   completionHandler:^(BOOL granted, NSError * _Nullable error) {
+                                       
+                                       if (error) {
+                                           NSLog(@"Error: %@", error);
+                                           resultBlock(NO);
+                                       }else if (granted) {
+                                           resultBlock(YES);
+                                       }else {
+                                           resultBlock(NO);
+                                       }
+                                   }];
+        }
+    }
+}
 
 + (LTConAuthorizationStatus)LT_getAuthorizationStatus{
     

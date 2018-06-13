@@ -21,8 +21,6 @@ typedef NS_ENUM(NSInteger, LTConAuthorizationStatus)
 @property (nonatomic, assign) NSMutableArray <LTContactsInfo *> *contactsArray;
 @property (nonatomic, assign) NSMutableArray <LTContactsInfo *> *allMobileNoArray;
 
-//- (NSMutableArray <ContactsInfo *>*)getContacts;
-
-+ (BOOL)LT_checkAuthorizationStatus;
++ (void)LT_checkAuthorizationStatus:(void(^)(BOOL authorized))resultBlock;
 + (LTConAuthorizationStatus)LT_getAuthorizationStatus;
 @end
