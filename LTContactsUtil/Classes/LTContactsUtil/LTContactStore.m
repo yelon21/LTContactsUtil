@@ -56,45 +56,50 @@
         self.personArray = [NSMutableArray array];
     }
     
-    NSArray *keys = @[CNContactPhoneNumbersKey,CNContactGivenNameKey,CNContactFamilyNameKey];
-    
-    CNContactFetchRequest *request = [[CNContactFetchRequest alloc]initWithKeysToFetch:keys];
-    
-    NSError *error;
-    
-    CNContactStore *contactStore = [[CNContactStore alloc]init];
-    
-    BOOL succeed = [contactStore enumerateContactsWithFetchRequest:request
-                                                   error:&error
-                                              usingBlock:^(CNContact * _Nonnull contact, BOOL * _Nonnull stop) {
-                
-                                                  LTContactsInfo *info = [[LTContactsInfo alloc]init];
-                                                  
-                                                  NSString *fullName = [NSString stringWithFormat:@"%@%@",contact.familyName,contact.givenName];
-                                                  
-                                                  info.name = fullName;
-                                                  
-                                                  NSArray *phones = contact.phoneNumbers;
-                                                  
-                                                  NSMutableArray *tels = [[NSMutableArray alloc] init];
-                                                  
-                                                  for(CNLabeledValue *value in phones) {
-                                                      
-                                                      CNPhoneNumber *phoneNumber = value.value;
-                                                      NSString *phone = phoneNumber.stringValue;
-                                                      
-                                                      [tels addObject:phone];
-                                                  }
-                                                  
-                                                  info.tels = tels;
-                                                  
-                                                  [self.personArray addObject:info];
-                                              }];
-    
-    if (!succeed || error) {
+    if (@available(iOS 9.0, *)) {
+        NSArray *keys = @[CNContactPhoneNumbersKey,CNContactGivenNameKey,CNContactFamilyNameKey];
         
-        NSLog(@"error=%@",error);
+        CNContactFetchRequest *request = [[CNContactFetchRequest alloc]initWithKeysToFetch:keys];
+        
+        NSError *error;
+        
+        CNContactStore *contactStore = [[CNContactStore alloc]init];
+        
+        BOOL succeed = [contactStore enumerateContactsWithFetchRequest:request
+                                                                 error:&error
+                                                            usingBlock:^(CNContact * _Nonnull contact, BOOL * _Nonnull stop) {
+                                                                
+                                                                LTContactsInfo *info = [[LTContactsInfo alloc]init];
+                                                                
+                                                                NSString *fullName = [NSString stringWithFormat:@"%@%@",contact.familyName,contact.givenName];
+                                                                
+                                                                info.name = fullName;
+                                                                
+                                                                NSArray *phones = contact.phoneNumbers;
+                                                                
+                                                                NSMutableArray *tels = [[NSMutableArray alloc] init];
+                                                                
+                                                                for(CNLabeledValue *value in phones) {
+                                                                    
+                                                                    CNPhoneNumber *phoneNumber = value.value;
+                                                                    NSString *phone = phoneNumber.stringValue;
+                                                                    
+                                                                    [tels addObject:phone];
+                                                                }
+                                                                
+                                                                info.tels = tels;
+                                                                
+                                                                [self.personArray addObject:info];
+                                                            }];
+        
+        if (!succeed || error) {
+            
+            NSLog(@"error=%@",error);
+        }
+    } else {
+        
     }
+    
     return self.personArray;
 }
 //
@@ -105,19 +110,24 @@
 
 + (LTConAuthorizationStatus)LT_getAuthorizationStatus{
     
-    CNAuthorizationStatus status = [CNContactStore authorizationStatusForEntityType:CNEntityTypeContacts];
-    
-    switch (status) {
-        case CNAuthorizationStatusNotDetermined:
-            return LTConAuthorizationStatus_NotDetermined;
-        case CNAuthorizationStatusDenied:
-            return LTConAuthorizationStatus_Denied;
-        case CNAuthorizationStatusAuthorized:
-            return LTConAuthorizationStatus_Authorized;
-        default:
-            return LTConAuthorizationStatus_Denied;
-            break;
+    if (@available(iOS 9.0, *)) {
+        
+        CNAuthorizationStatus status = [CNContactStore authorizationStatusForEntityType:CNEntityTypeContacts];
+        
+        switch (status) {
+            case CNAuthorizationStatusNotDetermined:
+                return LTConAuthorizationStatus_NotDetermined;
+            case CNAuthorizationStatusDenied:
+                return LTConAuthorizationStatus_Denied;
+            case CNAuthorizationStatusAuthorized:
+                return LTConAuthorizationStatus_Authorized;
+            default:
+                return LTConAuthorizationStatus_Denied;
+                break;
+        }
     }
+    
+    return LTConAuthorizationStatus_Authorized;
 }
 
 @end

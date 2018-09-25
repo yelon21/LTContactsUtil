@@ -7,310 +7,243 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0076AC9F665A64E4FEB12B1FAFAB2830 /* LTAddressBookStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BBFF87841672ABDEDEE6390ED761232 /* LTAddressBookStore.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1FC3293FF6049F395AFE011F5A011036 /* LTAddressBookSelect.m in Sources */ = {isa = PBXBuildFile; fileRef = 573BCF6A06E0E92137458FBA169F3CC9 /* LTAddressBookSelect.m */; };
-		34D46144E9142C3C1752C1D628A004C1 /* LTContactStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EFE37CBFD664F1F36F04D3C1913AA2C /* LTContactStore.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5771AE5D373B4DAE98AEDA197B1823B9 /* LTContactStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E60A8C0F4E9CB4171DE2F0B37E287F /* LTContactStore.m */; };
-		5C9FEF1EC880FD631E29C69E862F3071 /* LTAddressBookSelect.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D64144E8EBC37AA5D9EF8547A4707C9 /* LTAddressBookSelect.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		676C9E7603809F42F7BC0498AD80A425 /* LTContactSelect.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BD7FADEE9D2DA06D72F874F4B35D9F9 /* LTContactSelect.m */; };
-		76C56BE5520158A8AA671A4C7DA0A2F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		7710B8F784076C68E404B170DEEA7D67 /* Pods-LTContactsUtil_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FE219AB3C7817CE9984B5B8B6EC72BB2 /* Pods-LTContactsUtil_Tests-dummy.m */; };
-		7F6FB4BAC6EAC25F37B7D09560B22E48 /* LTContactsBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 68833343E5435460E1C105B2A6D0A8E5 /* LTContactsBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8E8782530B60606B513084EF4F92752D /* Pods-LTContactsUtil_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FC978E5342A997FBB85A405D880300 /* Pods-LTContactsUtil_Example-dummy.m */; };
-		9A17CFF7FB08FEE1F4364FD2FE7C5049 /* LTContactsUIUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4432702808B85623C141D6D3FD00D0 /* LTContactsUIUtil.m */; };
-		9F310CA7942CDFAFFB0DBED7F3366563 /* LTAddressBookStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C7B27596C64B8F94425FBDB6688F952 /* LTAddressBookStore.m */; };
-		9FEF2CED1C22055C050C9BAED66D0CF6 /* LTContactsInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 7111577F0EA693D1E5DB04FBA4E5F5FB /* LTContactsInfo.m */; };
-		C8B57E0590013F1B967B282806DDF96F /* LTContactsBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 799BF731FC0B56A2BBA4AD8DE183D6FE /* LTContactsBase.m */; };
-		CA7BAA912C0881E1602DFF64DBCA0C3C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		CBBE53BEBF4C442E8927A1C3D9ADC877 /* LTContactsUIUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = B1BE6A66EB0F2E3E034C8289933D583A /* LTContactsUIUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D2456EC3A8BAF8F61661F9D494BF546C /* LTContactsInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = CF206B2521761D88F67BB14473039088 /* LTContactsInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D2B9FFDD7C11649257AA2C87C3792515 /* LTContactsUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 144B357465FD77F5CAD29A6E663CAC1C /* LTContactsUtil.m */; };
-		D4962F34F5FD32DA639CB202A1EE40C6 /* LTContactSelect.h in Headers */ = {isa = PBXBuildFile; fileRef = 34F5B7DB18811F54DE2FE6BC84212941 /* LTContactSelect.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D7AF614C3FB81A9CC369A6C7953DBE47 /* LTContactsUtil-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D30D4660926CE28DB97C04642FB014 /* LTContactsUtil-dummy.m */; };
-		E6B34770877B615FBD6249ADE5A78E3A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		FB056ECFB915CF6D839C86369E62C2BB /* LTContactsUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = EAA3108EA22D6517C33EAB22CCEB1C67 /* LTContactsUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2813E5A0EF2BBFE467B48C8F12D79406 /* LTContactsBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 77224DB57381FE9B060D8973493F949A /* LTContactsBase.m */; };
+		2A4F4C5F3B60280B4545A849EFC4E095 /* LTContactsUtil-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E7E03B7CCC2EA314D2EB42527D91A9 /* LTContactsUtil-dummy.m */; };
+		38EF093C247591830B6A9DECC66EC4FD /* LTContactsUIUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FEB1EEC6CB1CDE1D6CA5165787DFB25 /* LTContactsUIUtil.m */; };
+		3EDBD3723C1C3ECC6F6705FC71F0F81A /* LTContactStore.h in Headers */ = {isa = PBXBuildFile; fileRef = BFB19A6BA76E413F5824F956A750C467 /* LTContactStore.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		52A510A357988E2912AF2A03E20EBF70 /* LTAddressBookStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 8579034F803D308623B7F4309363D449 /* LTAddressBookStore.m */; };
+		5B8F2DF1652A9F856E5DD1DFBCD8A625 /* Pods-LTContactsUtil_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AFA4E5A00CBB16793AF7B2FC89C0183B /* Pods-LTContactsUtil_Example-dummy.m */; };
+		6A809119CEC968DF385DEBCDF86D85B7 /* LTContactStore.m in Sources */ = {isa = PBXBuildFile; fileRef = FBCE157319CF36E5576E83CDA14A3AC1 /* LTContactStore.m */; };
+		6BE8D2479E375272554414EBE2D3DF80 /* LTContactsUIUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = E711FD7C31DD36C5715DE148182E0690 /* LTContactsUIUtil.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7CC2E420A215517A29471FEE8C0D176A /* LTContactsBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 0314C01A23761D644CD676F851C490EE /* LTContactsBase.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		841A3EE477BDEB6B4E36CAA3681A7B74 /* LTContactsUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 526400F5F9E0605D94030137B335241D /* LTContactsUtil.m */; };
+		9F6FFCF5803F419CE0960C04A5BD43F7 /* LTContactsInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 332087E65A2902A166AEA58CB3473988 /* LTContactsInfo.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BA9FD3A3F0BFE09DD979B591DEB676B7 /* LTContactsInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = CB7A99C35DCDF9F7E9D1DED8DAFEDB9A /* LTContactsInfo.m */; };
+		BE6A2AE7A9FC1313BF5F18F73EF04559 /* LTContactsUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 52AA05CBD78AC88209D848A249B7468F /* LTContactsUtil.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C7A896D6766D77B3C3B345C94F39C5DE /* LTAddressBookSelect.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AC06E5AA56C316F13DD22105F1F7DCD /* LTAddressBookSelect.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D12B1483016F79177B3B3B9BC2111E8D /* LTContactSelect.h in Headers */ = {isa = PBXBuildFile; fileRef = B68C938B613A263EE43D2047793750FF /* LTContactSelect.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D921855253A634C972BE956B5F83FADA /* LTContactSelect.m in Sources */ = {isa = PBXBuildFile; fileRef = 10297129D8676AF7894E4344A96E70F7 /* LTContactSelect.m */; };
+		EBA2D46CCA4B67C62EE44BC68D5CD862 /* LTAddressBookSelect.m in Sources */ = {isa = PBXBuildFile; fileRef = F947E9CF98A93C38FA9A90A8B42D50BF /* LTAddressBookSelect.m */; };
+		FDECCC981B19EE65ECD89A2F181F5A00 /* LTAddressBookStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AC6347D768E892A93B07ECE9ABA3DCC /* LTAddressBookStore.h */; settings = {ATTRIBUTES = (Project, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		118538A31D67E3EA334C31002F76F82F /* PBXContainerItemProxy */ = {
+		1F7DD3FF2D3C28BB110FC49E74B3359F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1EEED769220A200A38F565B7C8FB08DF;
+			remoteGlobalIDString = E2C69E5B7AA732FE3C6D3DBBFD1543D3;
 			remoteInfo = LTContactsUtil;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		144B357465FD77F5CAD29A6E663CAC1C /* LTContactsUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LTContactsUtil.m; sourceTree = "<group>"; };
-		147EA1E1EF043D78294CE1BB2661227D /* libPods-LTContactsUtil_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-LTContactsUtil_Example.a"; path = "libPods-LTContactsUtil_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		22FC978E5342A997FBB85A405D880300 /* Pods-LTContactsUtil_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LTContactsUtil_Example-dummy.m"; sourceTree = "<group>"; };
-		28E60A8C0F4E9CB4171DE2F0B37E287F /* LTContactStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LTContactStore.m; sourceTree = "<group>"; };
-		2EDFC2AD6223887B99C25BF5B7171C33 /* Pods-LTContactsUtil_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LTContactsUtil_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		34F5B7DB18811F54DE2FE6BC84212941 /* LTContactSelect.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LTContactSelect.h; sourceTree = "<group>"; };
-		3C7B27596C64B8F94425FBDB6688F952 /* LTAddressBookStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LTAddressBookStore.m; sourceTree = "<group>"; };
-		3C919DB2A3A8DCDB9554448F2263BCD8 /* Pods-LTContactsUtil_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LTContactsUtil_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		45B7B8E0A084BDE23232B35025AB10EC /* Pods-LTContactsUtil_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LTContactsUtil_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		4BBFF87841672ABDEDEE6390ED761232 /* LTAddressBookStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LTAddressBookStore.h; sourceTree = "<group>"; };
-		573BCF6A06E0E92137458FBA169F3CC9 /* LTAddressBookSelect.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LTAddressBookSelect.m; sourceTree = "<group>"; };
-		5BD7FADEE9D2DA06D72F874F4B35D9F9 /* LTContactSelect.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LTContactSelect.m; sourceTree = "<group>"; };
-		68833343E5435460E1C105B2A6D0A8E5 /* LTContactsBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LTContactsBase.h; sourceTree = "<group>"; };
-		7111577F0EA693D1E5DB04FBA4E5F5FB /* LTContactsInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LTContactsInfo.m; sourceTree = "<group>"; };
-		796F1B27CB817EFACD8E2A055EFD3F9A /* Pods-LTContactsUtil_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LTContactsUtil_Example-resources.sh"; sourceTree = "<group>"; };
-		799BF731FC0B56A2BBA4AD8DE183D6FE /* LTContactsBase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LTContactsBase.m; sourceTree = "<group>"; };
-		7DB13EE9725A911E1D331EA4711804A2 /* Pods-LTContactsUtil_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LTContactsUtil_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		7EFE37CBFD664F1F36F04D3C1913AA2C /* LTContactStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LTContactStore.h; sourceTree = "<group>"; };
-		8D64144E8EBC37AA5D9EF8547A4707C9 /* LTAddressBookSelect.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LTAddressBookSelect.h; sourceTree = "<group>"; };
+		0314C01A23761D644CD676F851C490EE /* LTContactsBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LTContactsBase.h; sourceTree = "<group>"; };
+		10297129D8676AF7894E4344A96E70F7 /* LTContactSelect.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LTContactSelect.m; sourceTree = "<group>"; };
+		2E5C887591F93B8DFBDD46C3D491EE7F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		332087E65A2902A166AEA58CB3473988 /* LTContactsInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LTContactsInfo.h; sourceTree = "<group>"; };
+		3AC6347D768E892A93B07ECE9ABA3DCC /* LTAddressBookStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LTAddressBookStore.h; sourceTree = "<group>"; };
+		4AF90F3EFDC2DB7362B075221E46569D /* LTContactsUtil.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LTContactsUtil.xcconfig; sourceTree = "<group>"; };
+		5157D786F7E0A40B566917A6AE7BEB8C /* LTContactsUtil.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = LTContactsUtil.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		526400F5F9E0605D94030137B335241D /* LTContactsUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LTContactsUtil.m; sourceTree = "<group>"; };
+		52AA05CBD78AC88209D848A249B7468F /* LTContactsUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LTContactsUtil.h; sourceTree = "<group>"; };
+		5AC06E5AA56C316F13DD22105F1F7DCD /* LTAddressBookSelect.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LTAddressBookSelect.h; sourceTree = "<group>"; };
+		5B9DE2F0EE41FC787FCE85FF46A44D6F /* Pods-LTContactsUtil_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LTContactsUtil_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		771FDF3CB65414A07042656E1F537EDC /* LTContactsUtil-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LTContactsUtil-prefix.pch"; sourceTree = "<group>"; };
+		77224DB57381FE9B060D8973493F949A /* LTContactsBase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LTContactsBase.m; sourceTree = "<group>"; };
+		8579034F803D308623B7F4309363D449 /* LTAddressBookStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LTAddressBookStore.m; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9669C329928ED7EF0302EF987AE2B19B /* LTContactsUtil.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LTContactsUtil.xcconfig; sourceTree = "<group>"; };
-		966BA725F596E33329C5B8A924DC18BC /* Pods-LTContactsUtil_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LTContactsUtil_Tests-resources.sh"; sourceTree = "<group>"; };
-		9A4432702808B85623C141D6D3FD00D0 /* LTContactsUIUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LTContactsUIUtil.m; sourceTree = "<group>"; };
-		A0A576AE9725839114CB302940542868 /* Pods-LTContactsUtil_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LTContactsUtil_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		A4BEAD93CA5FC5756DB7DF532C38114A /* LTContactsUtil-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LTContactsUtil-prefix.pch"; sourceTree = "<group>"; };
-		B1BE6A66EB0F2E3E034C8289933D583A /* LTContactsUIUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LTContactsUIUtil.h; sourceTree = "<group>"; };
-		B40992EC62A3C2A69184484B5B2E9436 /* Pods-LTContactsUtil_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LTContactsUtil_Example.release.xcconfig"; sourceTree = "<group>"; };
-		C2C8742D95994A289F1FF6417E033503 /* Pods-LTContactsUtil_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LTContactsUtil_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		C7023539BE010396D1D7D227D1E278F7 /* libLTContactsUtil.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libLTContactsUtil.a; path = libLTContactsUtil.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		CD214CEADF37B146708909F1E6B155FA /* Pods-LTContactsUtil_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LTContactsUtil_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		CE6583B4885D59ABC5775DD00ED84E95 /* Pods-LTContactsUtil_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LTContactsUtil_Example-frameworks.sh"; sourceTree = "<group>"; };
-		CF206B2521761D88F67BB14473039088 /* LTContactsInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LTContactsInfo.h; sourceTree = "<group>"; };
-		D5D30D4660926CE28DB97C04642FB014 /* LTContactsUtil-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LTContactsUtil-dummy.m"; sourceTree = "<group>"; };
-		E0BAF4DD0DBEAD02A04C72EEB731DF75 /* libPods-LTContactsUtil_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-LTContactsUtil_Tests.a"; path = "libPods-LTContactsUtil_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E2099A9520A74BE2990F16E9AB66698C /* Pods-LTContactsUtil_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LTContactsUtil_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		EAA3108EA22D6517C33EAB22CCEB1C67 /* LTContactsUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LTContactsUtil.h; sourceTree = "<group>"; };
-		FE219AB3C7817CE9984B5B8B6EC72BB2 /* Pods-LTContactsUtil_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LTContactsUtil_Tests-dummy.m"; sourceTree = "<group>"; };
+		93E7E03B7CCC2EA314D2EB42527D91A9 /* LTContactsUtil-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LTContactsUtil-dummy.m"; sourceTree = "<group>"; };
+		96D5EBF367E7CDBE77C798820CFD51F3 /* libPods-LTContactsUtil_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-LTContactsUtil_Example.a"; path = "libPods-LTContactsUtil_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FEB1EEC6CB1CDE1D6CA5165787DFB25 /* LTContactsUIUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LTContactsUIUtil.m; sourceTree = "<group>"; };
+		AFA4E5A00CBB16793AF7B2FC89C0183B /* Pods-LTContactsUtil_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LTContactsUtil_Example-dummy.m"; sourceTree = "<group>"; };
+		B68C938B613A263EE43D2047793750FF /* LTContactSelect.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LTContactSelect.h; sourceTree = "<group>"; };
+		BC24FFF21325F398F792DE4F75219EB1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		BFB19A6BA76E413F5824F956A750C467 /* LTContactStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LTContactStore.h; sourceTree = "<group>"; };
+		CB7A99C35DCDF9F7E9D1DED8DAFEDB9A /* LTContactsInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LTContactsInfo.m; sourceTree = "<group>"; };
+		DEF452C13530758658AE8E7A079E9C1B /* Pods-LTContactsUtil_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LTContactsUtil_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		E711FD7C31DD36C5715DE148182E0690 /* LTContactsUIUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LTContactsUIUtil.h; sourceTree = "<group>"; };
+		E9484A0A1F463090F448459FE371D57A /* Pods-LTContactsUtil_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LTContactsUtil_Example.release.xcconfig"; sourceTree = "<group>"; };
+		F85318AB0FE050449F3A63E04DEF09D1 /* Pods-LTContactsUtil_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LTContactsUtil_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F947E9CF98A93C38FA9A90A8B42D50BF /* LTAddressBookSelect.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LTAddressBookSelect.m; sourceTree = "<group>"; };
+		FBCE157319CF36E5576E83CDA14A3AC1 /* LTContactStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LTContactStore.m; sourceTree = "<group>"; };
+		FFB25884947617F568B522F13798D095 /* libLTContactsUtil.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libLTContactsUtil.a; path = libLTContactsUtil.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2F3CD2733A7C74B2F14767C658902E08 /* Frameworks */ = {
+		63445658F358F20BE2548D2C59A377BD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA7BAA912C0881E1602DFF64DBCA0C3C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		54A81B8C8B6DEBBF67FFFCF49CCFE653 /* Frameworks */ = {
+		BD9ABAB5EE40E58B2AC495F2185C7621 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E6B34770877B615FBD6249ADE5A78E3A /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ECFC63964B928B17D058A2DC662EFA01 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				76C56BE5520158A8AA671A4C7DA0A2F1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0FD942E2A1AA496330F5A5982D423303 /* LTContactsUtil */ = {
+		03BB6E666994E96F67B67B9FA104B377 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				43AE5F545FA5DAB59C6FB115570705EB /* Classes */,
-			);
-			name = LTContactsUtil;
-			path = LTContactsUtil;
-			sourceTree = "<group>";
-		};
-		3FABD29A378F662B34711524A2F684C4 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				888E4C38CE6AF4FBC2FEA70DC71630D9 /* Pods-LTContactsUtil_Example */,
-				4EB6F8384BDD1F3656CD7A0BBC148A05 /* Pods-LTContactsUtil_Tests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		40218354662D5172FCC424CC99342A69 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				B4B5AA3915A03ECDE3AE87A19D1313E8 /* LTContactsUtil */,
+				349FFF433FF9A1A6FCB20670C946428C /* LTContactsUtil */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		43AE5F545FA5DAB59C6FB115570705EB /* Classes */ = {
+		0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6977E15C7B6E52A296D4AC495BFF1FBA /* LTContactsUIUtil */,
-				CA6D75D96D863386498BDBA91E49D77C /* LTContactsUtil */,
 			);
-			name = Classes;
-			path = Classes;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		4EB6F8384BDD1F3656CD7A0BBC148A05 /* Pods-LTContactsUtil_Tests */ = {
+		1535C5671DD27EA0B7E8C771C792D53D /* Pods-LTContactsUtil_Example */ = {
 			isa = PBXGroup;
 			children = (
-				CD214CEADF37B146708909F1E6B155FA /* Pods-LTContactsUtil_Tests-acknowledgements.markdown */,
-				3C919DB2A3A8DCDB9554448F2263BCD8 /* Pods-LTContactsUtil_Tests-acknowledgements.plist */,
-				FE219AB3C7817CE9984B5B8B6EC72BB2 /* Pods-LTContactsUtil_Tests-dummy.m */,
-				2EDFC2AD6223887B99C25BF5B7171C33 /* Pods-LTContactsUtil_Tests-frameworks.sh */,
-				966BA725F596E33329C5B8A924DC18BC /* Pods-LTContactsUtil_Tests-resources.sh */,
-				7DB13EE9725A911E1D331EA4711804A2 /* Pods-LTContactsUtil_Tests.debug.xcconfig */,
-				A0A576AE9725839114CB302940542868 /* Pods-LTContactsUtil_Tests.release.xcconfig */,
+				F85318AB0FE050449F3A63E04DEF09D1 /* Pods-LTContactsUtil_Example-acknowledgements.markdown */,
+				DEF452C13530758658AE8E7A079E9C1B /* Pods-LTContactsUtil_Example-acknowledgements.plist */,
+				AFA4E5A00CBB16793AF7B2FC89C0183B /* Pods-LTContactsUtil_Example-dummy.m */,
+				5B9DE2F0EE41FC787FCE85FF46A44D6F /* Pods-LTContactsUtil_Example.debug.xcconfig */,
+				E9484A0A1F463090F448459FE371D57A /* Pods-LTContactsUtil_Example.release.xcconfig */,
 			);
-			name = "Pods-LTContactsUtil_Tests";
-			path = "Target Support Files/Pods-LTContactsUtil_Tests";
+			name = "Pods-LTContactsUtil_Example";
+			path = "Target Support Files/Pods-LTContactsUtil_Example";
 			sourceTree = "<group>";
 		};
-		502EB12DC59137D3B3CC2C4A89B717B6 /* Support Files */ = {
+		16E04EE9EDA44B4A2EF58E2353F81B5F /* LTContactsUIUtil */ = {
 			isa = PBXGroup;
 			children = (
-				9669C329928ED7EF0302EF987AE2B19B /* LTContactsUtil.xcconfig */,
-				D5D30D4660926CE28DB97C04642FB014 /* LTContactsUtil-dummy.m */,
-				A4BEAD93CA5FC5756DB7DF532C38114A /* LTContactsUtil-prefix.pch */,
+				5AC06E5AA56C316F13DD22105F1F7DCD /* LTAddressBookSelect.h */,
+				F947E9CF98A93C38FA9A90A8B42D50BF /* LTAddressBookSelect.m */,
+				B68C938B613A263EE43D2047793750FF /* LTContactSelect.h */,
+				10297129D8676AF7894E4344A96E70F7 /* LTContactSelect.m */,
+				E711FD7C31DD36C5715DE148182E0690 /* LTContactsUIUtil.h */,
+				9FEB1EEC6CB1CDE1D6CA5165787DFB25 /* LTContactsUIUtil.m */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/LTContactsUtil";
+			name = LTContactsUIUtil;
+			path = LTContactsUtil/Classes/LTContactsUIUtil;
 			sourceTree = "<group>";
 		};
-		56C8DDE517C6D24333F14A6303E73D21 /* Products */ = {
+		1A7A1510D3C1C5AC005A99E30DA7A755 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C7023539BE010396D1D7D227D1E278F7 /* libLTContactsUtil.a */,
-				147EA1E1EF043D78294CE1BB2661227D /* libPods-LTContactsUtil_Example.a */,
-				E0BAF4DD0DBEAD02A04C72EEB731DF75 /* libPods-LTContactsUtil_Tests.a */,
+				FFB25884947617F568B522F13798D095 /* libLTContactsUtil.a */,
+				96D5EBF367E7CDBE77C798820CFD51F3 /* libPods-LTContactsUtil_Example.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6977E15C7B6E52A296D4AC495BFF1FBA /* LTContactsUIUtil */ = {
+		349FFF433FF9A1A6FCB20670C946428C /* LTContactsUtil */ = {
 			isa = PBXGroup;
 			children = (
-				8D64144E8EBC37AA5D9EF8547A4707C9 /* LTAddressBookSelect.h */,
-				573BCF6A06E0E92137458FBA169F3CC9 /* LTAddressBookSelect.m */,
-				34F5B7DB18811F54DE2FE6BC84212941 /* LTContactSelect.h */,
-				5BD7FADEE9D2DA06D72F874F4B35D9F9 /* LTContactSelect.m */,
-				B1BE6A66EB0F2E3E034C8289933D583A /* LTContactsUIUtil.h */,
-				9A4432702808B85623C141D6D3FD00D0 /* LTContactsUIUtil.m */,
+				16E04EE9EDA44B4A2EF58E2353F81B5F /* LTContactsUIUtil */,
+				E0E7890545AC2EF4F0642D059A5FE415 /* LTContactsUtil */,
+				CB0E028A4AC346D9BF0D9649733C6936 /* Pod */,
+				A624F75075BB037754E4E90D21A87B8A /* Support Files */,
 			);
-			name = LTContactsUIUtil;
-			path = LTContactsUIUtil;
+			name = LTContactsUtil;
+			path = ../..;
 			sourceTree = "<group>";
 		};
-		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+		3BF1CFCB2ECD96BA3E9732253EF0C2DB /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+				1535C5671DD27EA0B7E8C771C792D53D /* Pods-LTContactsUtil_Example */,
 			);
-			name = iOS;
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				40218354662D5172FCC424CC99342A69 /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				56C8DDE517C6D24333F14A6303E73D21 /* Products */,
-				3FABD29A378F662B34711524A2F684C4 /* Targets Support Files */,
+				03BB6E666994E96F67B67B9FA104B377 /* Development Pods */,
+				0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */,
+				1A7A1510D3C1C5AC005A99E30DA7A755 /* Products */,
+				3BF1CFCB2ECD96BA3E9732253EF0C2DB /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		888E4C38CE6AF4FBC2FEA70DC71630D9 /* Pods-LTContactsUtil_Example */ = {
+		A624F75075BB037754E4E90D21A87B8A /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				C2C8742D95994A289F1FF6417E033503 /* Pods-LTContactsUtil_Example-acknowledgements.markdown */,
-				45B7B8E0A084BDE23232B35025AB10EC /* Pods-LTContactsUtil_Example-acknowledgements.plist */,
-				22FC978E5342A997FBB85A405D880300 /* Pods-LTContactsUtil_Example-dummy.m */,
-				CE6583B4885D59ABC5775DD00ED84E95 /* Pods-LTContactsUtil_Example-frameworks.sh */,
-				796F1B27CB817EFACD8E2A055EFD3F9A /* Pods-LTContactsUtil_Example-resources.sh */,
-				E2099A9520A74BE2990F16E9AB66698C /* Pods-LTContactsUtil_Example.debug.xcconfig */,
-				B40992EC62A3C2A69184484B5B2E9436 /* Pods-LTContactsUtil_Example.release.xcconfig */,
+				4AF90F3EFDC2DB7362B075221E46569D /* LTContactsUtil.xcconfig */,
+				93E7E03B7CCC2EA314D2EB42527D91A9 /* LTContactsUtil-dummy.m */,
+				771FDF3CB65414A07042656E1F537EDC /* LTContactsUtil-prefix.pch */,
 			);
-			name = "Pods-LTContactsUtil_Example";
-			path = "Target Support Files/Pods-LTContactsUtil_Example";
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/LTContactsUtil";
 			sourceTree = "<group>";
 		};
-		B4B5AA3915A03ECDE3AE87A19D1313E8 /* LTContactsUtil */ = {
+		CB0E028A4AC346D9BF0D9649733C6936 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				0FD942E2A1AA496330F5A5982D423303 /* LTContactsUtil */,
-				502EB12DC59137D3B3CC2C4A89B717B6 /* Support Files */,
+				BC24FFF21325F398F792DE4F75219EB1 /* LICENSE */,
+				5157D786F7E0A40B566917A6AE7BEB8C /* LTContactsUtil.podspec */,
+				2E5C887591F93B8DFBDD46C3D491EE7F /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		E0E7890545AC2EF4F0642D059A5FE415 /* LTContactsUtil */ = {
+			isa = PBXGroup;
+			children = (
+				3AC6347D768E892A93B07ECE9ABA3DCC /* LTAddressBookStore.h */,
+				8579034F803D308623B7F4309363D449 /* LTAddressBookStore.m */,
+				0314C01A23761D644CD676F851C490EE /* LTContactsBase.h */,
+				77224DB57381FE9B060D8973493F949A /* LTContactsBase.m */,
+				332087E65A2902A166AEA58CB3473988 /* LTContactsInfo.h */,
+				CB7A99C35DCDF9F7E9D1DED8DAFEDB9A /* LTContactsInfo.m */,
+				BFB19A6BA76E413F5824F956A750C467 /* LTContactStore.h */,
+				FBCE157319CF36E5576E83CDA14A3AC1 /* LTContactStore.m */,
+				52AA05CBD78AC88209D848A249B7468F /* LTContactsUtil.h */,
+				526400F5F9E0605D94030137B335241D /* LTContactsUtil.m */,
 			);
 			name = LTContactsUtil;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		CA6D75D96D863386498BDBA91E49D77C /* LTContactsUtil */ = {
-			isa = PBXGroup;
-			children = (
-				4BBFF87841672ABDEDEE6390ED761232 /* LTAddressBookStore.h */,
-				3C7B27596C64B8F94425FBDB6688F952 /* LTAddressBookStore.m */,
-				68833343E5435460E1C105B2A6D0A8E5 /* LTContactsBase.h */,
-				799BF731FC0B56A2BBA4AD8DE183D6FE /* LTContactsBase.m */,
-				CF206B2521761D88F67BB14473039088 /* LTContactsInfo.h */,
-				7111577F0EA693D1E5DB04FBA4E5F5FB /* LTContactsInfo.m */,
-				7EFE37CBFD664F1F36F04D3C1913AA2C /* LTContactStore.h */,
-				28E60A8C0F4E9CB4171DE2F0B37E287F /* LTContactStore.m */,
-				EAA3108EA22D6517C33EAB22CCEB1C67 /* LTContactsUtil.h */,
-				144B357465FD77F5CAD29A6E663CAC1C /* LTContactsUtil.m */,
-			);
-			name = LTContactsUtil;
-			path = LTContactsUtil;
+			path = LTContactsUtil/Classes/LTContactsUtil;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		2E11855513AD44F19B3F858C84E8AF94 /* Headers */ = {
+		511542E860F419F8C4E11083E179526B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C9FEF1EC880FD631E29C69E862F3071 /* LTAddressBookSelect.h in Headers */,
-				0076AC9F665A64E4FEB12B1FAFAB2830 /* LTAddressBookStore.h in Headers */,
-				7F6FB4BAC6EAC25F37B7D09560B22E48 /* LTContactsBase.h in Headers */,
-				D4962F34F5FD32DA639CB202A1EE40C6 /* LTContactSelect.h in Headers */,
-				D2456EC3A8BAF8F61661F9D494BF546C /* LTContactsInfo.h in Headers */,
-				34D46144E9142C3C1752C1D628A004C1 /* LTContactStore.h in Headers */,
-				CBBE53BEBF4C442E8927A1C3D9ADC877 /* LTContactsUIUtil.h in Headers */,
-				FB056ECFB915CF6D839C86369E62C2BB /* LTContactsUtil.h in Headers */,
+				C7A896D6766D77B3C3B345C94F39C5DE /* LTAddressBookSelect.h in Headers */,
+				FDECCC981B19EE65ECD89A2F181F5A00 /* LTAddressBookStore.h in Headers */,
+				7CC2E420A215517A29471FEE8C0D176A /* LTContactsBase.h in Headers */,
+				D12B1483016F79177B3B3B9BC2111E8D /* LTContactSelect.h in Headers */,
+				9F6FFCF5803F419CE0960C04A5BD43F7 /* LTContactsInfo.h in Headers */,
+				3EDBD3723C1C3ECC6F6705FC71F0F81A /* LTContactStore.h in Headers */,
+				6BE8D2479E375272554414EBE2D3DF80 /* LTContactsUIUtil.h in Headers */,
+				BE6A2AE7A9FC1313BF5F18F73EF04559 /* LTContactsUtil.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCFAB213420A675B38A5CE09070D466C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		08E6604D8FE6C3F9EF0A7552FB95FFB3 /* Pods-LTContactsUtil_Example */ = {
+		E2C69E5B7AA732FE3C6D3DBBFD1543D3 /* LTContactsUtil */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 38DF607D25ED9B49E356A25E50CC6B35 /* Build configuration list for PBXNativeTarget "Pods-LTContactsUtil_Example" */;
+			buildConfigurationList = FFC4A76ADA6602EE2DA164C1963BA4C7 /* Build configuration list for PBXNativeTarget "LTContactsUtil" */;
 			buildPhases = (
-				D55EF1156334385D6E7A67C2A3184B72 /* Sources */,
-				ECFC63964B928B17D058A2DC662EFA01 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CD68F1A9BC84888EE20EE0572DE69404 /* PBXTargetDependency */,
-			);
-			name = "Pods-LTContactsUtil_Example";
-			productName = "Pods-LTContactsUtil_Example";
-			productReference = 147EA1E1EF043D78294CE1BB2661227D /* libPods-LTContactsUtil_Example.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		1EEED769220A200A38F565B7C8FB08DF /* LTContactsUtil */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FC08409003BF7DED919FF75E0722810D /* Build configuration list for PBXNativeTarget "LTContactsUtil" */;
-			buildPhases = (
-				8318D278EB88A16D99675A86C21561E0 /* Sources */,
-				54A81B8C8B6DEBBF67FFFCF49CCFE653 /* Frameworks */,
-				2E11855513AD44F19B3F858C84E8AF94 /* Headers */,
+				511542E860F419F8C4E11083E179526B /* Headers */,
+				DFB2CF55A58DD7DBA32F267DD7E0B153 /* Sources */,
+				63445658F358F20BE2548D2C59A377BD /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -318,23 +251,25 @@
 			);
 			name = LTContactsUtil;
 			productName = LTContactsUtil;
-			productReference = C7023539BE010396D1D7D227D1E278F7 /* libLTContactsUtil.a */;
+			productReference = FFB25884947617F568B522F13798D095 /* libLTContactsUtil.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		D6458DFBF3C942596B5E1B9D52FBBE77 /* Pods-LTContactsUtil_Tests */ = {
+		F2C80D34439B6170ADE64A1FCF653081 /* Pods-LTContactsUtil_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 94FB20B9B86AC0ABD09C5874239D8844 /* Build configuration list for PBXNativeTarget "Pods-LTContactsUtil_Tests" */;
+			buildConfigurationList = 10676B5042E0BC10450EE287FA6103CA /* Build configuration list for PBXNativeTarget "Pods-LTContactsUtil_Example" */;
 			buildPhases = (
-				3B792360759A4F8A83BE341F6113DC47 /* Sources */,
-				2F3CD2733A7C74B2F14767C658902E08 /* Frameworks */,
+				FCFAB213420A675B38A5CE09070D466C /* Headers */,
+				6DC699BB5C7EE635FB10C1BE3A61533D /* Sources */,
+				BD9ABAB5EE40E58B2AC495F2185C7621 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E9148186DA8BB9C355F6E6F88BD8E376 /* PBXTargetDependency */,
 			);
-			name = "Pods-LTContactsUtil_Tests";
-			productName = "Pods-LTContactsUtil_Tests";
-			productReference = E0BAF4DD0DBEAD02A04C72EEB731DF75 /* libPods-LTContactsUtil_Tests.a */;
+			name = "Pods-LTContactsUtil_Example";
+			productName = "Pods-LTContactsUtil_Example";
+			productReference = 96D5EBF367E7CDBE77C798820CFD51F3 /* libPods-LTContactsUtil_Example.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -343,8 +278,8 @@
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0700;
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -354,319 +289,292 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 56C8DDE517C6D24333F14A6303E73D21 /* Products */;
+			productRefGroup = 1A7A1510D3C1C5AC005A99E30DA7A755 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1EEED769220A200A38F565B7C8FB08DF /* LTContactsUtil */,
-				08E6604D8FE6C3F9EF0A7552FB95FFB3 /* Pods-LTContactsUtil_Example */,
-				D6458DFBF3C942596B5E1B9D52FBBE77 /* Pods-LTContactsUtil_Tests */,
+				E2C69E5B7AA732FE3C6D3DBBFD1543D3 /* LTContactsUtil */,
+				F2C80D34439B6170ADE64A1FCF653081 /* Pods-LTContactsUtil_Example */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3B792360759A4F8A83BE341F6113DC47 /* Sources */ = {
+		6DC699BB5C7EE635FB10C1BE3A61533D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7710B8F784076C68E404B170DEEA7D67 /* Pods-LTContactsUtil_Tests-dummy.m in Sources */,
+				5B8F2DF1652A9F856E5DD1DFBCD8A625 /* Pods-LTContactsUtil_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8318D278EB88A16D99675A86C21561E0 /* Sources */ = {
+		DFB2CF55A58DD7DBA32F267DD7E0B153 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FC3293FF6049F395AFE011F5A011036 /* LTAddressBookSelect.m in Sources */,
-				9F310CA7942CDFAFFB0DBED7F3366563 /* LTAddressBookStore.m in Sources */,
-				C8B57E0590013F1B967B282806DDF96F /* LTContactsBase.m in Sources */,
-				676C9E7603809F42F7BC0498AD80A425 /* LTContactSelect.m in Sources */,
-				9FEF2CED1C22055C050C9BAED66D0CF6 /* LTContactsInfo.m in Sources */,
-				5771AE5D373B4DAE98AEDA197B1823B9 /* LTContactStore.m in Sources */,
-				9A17CFF7FB08FEE1F4364FD2FE7C5049 /* LTContactsUIUtil.m in Sources */,
-				D7AF614C3FB81A9CC369A6C7953DBE47 /* LTContactsUtil-dummy.m in Sources */,
-				D2B9FFDD7C11649257AA2C87C3792515 /* LTContactsUtil.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D55EF1156334385D6E7A67C2A3184B72 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8E8782530B60606B513084EF4F92752D /* Pods-LTContactsUtil_Example-dummy.m in Sources */,
+				EBA2D46CCA4B67C62EE44BC68D5CD862 /* LTAddressBookSelect.m in Sources */,
+				52A510A357988E2912AF2A03E20EBF70 /* LTAddressBookStore.m in Sources */,
+				2813E5A0EF2BBFE467B48C8F12D79406 /* LTContactsBase.m in Sources */,
+				D921855253A634C972BE956B5F83FADA /* LTContactSelect.m in Sources */,
+				BA9FD3A3F0BFE09DD979B591DEB676B7 /* LTContactsInfo.m in Sources */,
+				6A809119CEC968DF385DEBCDF86D85B7 /* LTContactStore.m in Sources */,
+				38EF093C247591830B6A9DECC66EC4FD /* LTContactsUIUtil.m in Sources */,
+				2A4F4C5F3B60280B4545A849EFC4E095 /* LTContactsUtil-dummy.m in Sources */,
+				841A3EE477BDEB6B4E36CAA3681A7B74 /* LTContactsUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		CD68F1A9BC84888EE20EE0572DE69404 /* PBXTargetDependency */ = {
+		E9148186DA8BB9C355F6E6F88BD8E376 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = LTContactsUtil;
-			target = 1EEED769220A200A38F565B7C8FB08DF /* LTContactsUtil */;
-			targetProxy = 118538A31D67E3EA334C31002F76F82F /* PBXContainerItemProxy */;
+			target = E2C69E5B7AA732FE3C6D3DBBFD1543D3 /* LTContactsUtil */;
+			targetProxy = 1F7DD3FF2D3C28BB110FC49E74B3359F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		7EB8A7F0408120E6D421710E339CBF17 /* Debug */ = {
+		086B776A282A208C630CBACC739B8829 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E2099A9520A74BE2990F16E9AB66698C /* Pods-LTContactsUtil_Example.debug.xcconfig */;
+			baseConfigurationReference = 4AF90F3EFDC2DB7362B075221E46569D /* LTContactsUtil.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				GCC_PREFIX_HEADER = "Target Support Files/LTContactsUtil/LTContactsUtil-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = LTContactsUtil;
+				PRODUCT_NAME = LTContactsUtil;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		44477DA7F1FA93370B46A7C1BEC24A10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B9DE2F0EE41FC787FCE85FF46A44D6F /* Pods-LTContactsUtil_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		8F4256B10D5944278802E9AA0E7E9A69 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9669C329928ED7EF0302EF987AE2B19B /* LTContactsUtil.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/LTContactsUtil/LTContactsUtil-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		B569ECED6DF5EC7ABDDF8C8957E26574 /* Release */ = {
+		96434B6C8FF320C976A10DAD7174A4BB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
 				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_RELEASE=1",
 					"$(inherited)",
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		A6B02EA54667F416B88AA54FBB307F4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9484A0A1F463090F448459FE371D57A /* Pods-LTContactsUtil_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		BB57A32C36046C8314B1B9CB9F501584 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B40992EC62A3C2A69184484B5B2E9436 /* Pods-LTContactsUtil_Example.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		DC1B06514C9696EC1213EE7949BDF2C3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7DB13EE9725A911E1D331EA4711804A2 /* Pods-LTContactsUtil_Tests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		E7E92134EBEF4AA93C7F266068989418 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9669C329928ED7EF0302EF987AE2B19B /* LTContactsUtil.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/LTContactsUtil/LTContactsUtil-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		FAB36FDA05A1DD1623B8919D42F676E0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A0A576AE9725839114CB302940542868 /* Pods-LTContactsUtil_Tests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		FD5B3B1E89981BCDBC5C396B164D3C37 /* Debug */ = {
+		D11C82AF2204B41B80412B8DC9C1D652 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_DEBUG=1",
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
+		D74B43664E0C101296409A7BD86D61F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AF90F3EFDC2DB7362B075221E46569D /* LTContactsUtil.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/LTContactsUtil/LTContactsUtil-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = LTContactsUtil;
+				PRODUCT_NAME = LTContactsUtil;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		10676B5042E0BC10450EE287FA6103CA /* Build configuration list for PBXNativeTarget "Pods-LTContactsUtil_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44477DA7F1FA93370B46A7C1BEC24A10 /* Debug */,
+				A6B02EA54667F416B88AA54FBB307F4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FD5B3B1E89981BCDBC5C396B164D3C37 /* Debug */,
-				B569ECED6DF5EC7ABDDF8C8957E26574 /* Release */,
+				D11C82AF2204B41B80412B8DC9C1D652 /* Debug */,
+				96434B6C8FF320C976A10DAD7174A4BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		38DF607D25ED9B49E356A25E50CC6B35 /* Build configuration list for PBXNativeTarget "Pods-LTContactsUtil_Example" */ = {
+		FFC4A76ADA6602EE2DA164C1963BA4C7 /* Build configuration list for PBXNativeTarget "LTContactsUtil" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7EB8A7F0408120E6D421710E339CBF17 /* Debug */,
-				BB57A32C36046C8314B1B9CB9F501584 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		94FB20B9B86AC0ABD09C5874239D8844 /* Build configuration list for PBXNativeTarget "Pods-LTContactsUtil_Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DC1B06514C9696EC1213EE7949BDF2C3 /* Debug */,
-				FAB36FDA05A1DD1623B8919D42F676E0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FC08409003BF7DED919FF75E0722810D /* Build configuration list for PBXNativeTarget "LTContactsUtil" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8F4256B10D5944278802E9AA0E7E9A69 /* Debug */,
-				E7E92134EBEF4AA93C7F266068989418 /* Release */,
+				086B776A282A208C630CBACC739B8829 /* Debug */,
+				D74B43664E0C101296409A7BD86D61F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

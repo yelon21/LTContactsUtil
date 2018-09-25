@@ -48,7 +48,7 @@
             startingLineNumber = "112"
             endingLineNumber = "112"
             landmarkName = "-showSelectFrom:name:tels:"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LTContactsUtil/LYViewController.m"
-            timestampString = "491410313.706472"
+            timestampString = "550484120.969294"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
             landmarkName = "-touchesBegan:withEvent:"
             landmarkType = "7">
          </BreakpointContent>

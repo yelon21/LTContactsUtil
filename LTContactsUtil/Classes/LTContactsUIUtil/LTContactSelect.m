@@ -17,13 +17,13 @@
 
 @implementation LTContactSelect
 
-+ (BOOL)checkAuthorizationStatus{
-
++ (BOOL)checkAuthorizationStatus API_AVAILABLE(ios(9.0)){
+    
     CNAuthorizationStatus status = [CNContactStore authorizationStatusForEntityType:CNEntityTypeContacts];
     return status == CNAuthorizationStatusAuthorized;
 }
 
-- (void)showAddressBookUIFromVC:(UIViewController *)viewCon didSelect:(void(^)(NSString *name,NSArray *tels))didSelectPerson{
+- (void)showAddressBookUIFromVC:(UIViewController *)viewCon didSelect:(void(^)(NSString *name,NSArray *tels))didSelectPerson API_AVAILABLE(ios(9.0)){
     
     self.didSelectPerson = didSelectPerson;
     
@@ -36,7 +36,7 @@
 }
 
 #pragma mark CNContactPickerDelegate
-- (void)contactPickerDidCancel:(CNContactPickerViewController *)picker{
+- (void)contactPickerDidCancel:(CNContactPickerViewController *)picker API_AVAILABLE(ios(9.0)){
     
 }
 
@@ -44,7 +44,7 @@
  * @abstract Singular delegate methods.
  * @discussion These delegate methods will be invoked when the user selects a single contact or property.
  */
-- (void)contactPicker:(CNContactPickerViewController *)picker didSelectContact:(CNContact *)contact{
+- (void)contactPicker:(CNContactPickerViewController *)picker didSelectContact:(CNContact *)contact API_AVAILABLE(ios(9.0)){
     
     NSString *fullName = [NSString stringWithFormat:@"%@%@",contact.familyName,contact.givenName];
     
@@ -71,7 +71,7 @@
     }
 }
 
-- (void)contactPicker:(CNContactPickerViewController *)picker didSelectContactProperty:(CNContactProperty *)contactProperty{
+- (void)contactPicker:(CNContactPickerViewController *)picker didSelectContactProperty:(CNContactProperty *)contactProperty API_AVAILABLE(ios(9.0)){
     
     CNContact *contact = contactProperty.contact;
     
