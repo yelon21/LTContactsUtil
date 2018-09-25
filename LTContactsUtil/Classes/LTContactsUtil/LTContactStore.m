@@ -103,7 +103,7 @@
     return self.personArray;
 }
 //
-+(void)LT_checkAuthorizationStatus:(void (^)(BOOL))resultBlock{
++(void)LT_checkAuthorizationStatus:(void (^)(BOOL))resultBlock NS_AVAILABLE(10_11, 9_0){
     
     if (resultBlock) {
         
@@ -131,26 +131,21 @@
     }
 }
 
-+ (LTConAuthorizationStatus)LT_getAuthorizationStatus{
++ (LTConAuthorizationStatus)LT_getAuthorizationStatus NS_AVAILABLE(10_11, 9_0){
     
-    if (@available(iOS 9.0, *)) {
-        
-        CNAuthorizationStatus status = [CNContactStore authorizationStatusForEntityType:CNEntityTypeContacts];
-        
-        switch (status) {
-            case CNAuthorizationStatusNotDetermined:
-                return LTConAuthorizationStatus_NotDetermined;
-            case CNAuthorizationStatusDenied:
-                return LTConAuthorizationStatus_Denied;
-            case CNAuthorizationStatusAuthorized:
-                return LTConAuthorizationStatus_Authorized;
-            default:
-                return LTConAuthorizationStatus_Denied;
-                break;
-        }
+    CNAuthorizationStatus status = [CNContactStore authorizationStatusForEntityType:CNEntityTypeContacts];
+    
+    switch (status) {
+        case CNAuthorizationStatusNotDetermined:
+            return LTConAuthorizationStatus_NotDetermined;
+        case CNAuthorizationStatusDenied:
+            return LTConAuthorizationStatus_Denied;
+        case CNAuthorizationStatusAuthorized:
+            return LTConAuthorizationStatus_Authorized;
+        default:
+            return LTConAuthorizationStatus_Denied;
+            break;
     }
-    
-    return LTConAuthorizationStatus_Authorized;
 }
 
 @end

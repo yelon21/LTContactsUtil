@@ -111,7 +111,7 @@
                     break;
                 }
                 case 1: {// Email
-                    NSString *email = (__bridge NSString*)value;
+//                    NSString *email = (__bridge NSString*)value;
                     
                     break;
                 }
