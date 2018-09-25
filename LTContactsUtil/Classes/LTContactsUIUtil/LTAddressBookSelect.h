@@ -11,8 +11,6 @@
 
 @interface LTAddressBookSelect : NSObject
 
-+ (BOOL)checkAuthorizationStatus;
-
 - (void)showAddressBookUIFromVC:(UIViewController *)viewCon
                               didSelect:(void(^)(NSString *name,NSArray *tels))didSelectPerson;
 @end

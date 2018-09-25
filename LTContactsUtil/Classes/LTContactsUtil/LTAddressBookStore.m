@@ -183,17 +183,36 @@
     return self.personArray;
 }
 
-//+ (BOOL)LT_checkAuthorizationStatus{
-//    
-//    if (floor(NSFoundationVersionNumber) > NSFoundationVersionNumber_iOS_5_1) {
-//        
-//        if (ABAddressBookGetAuthorizationStatus() != kABAuthorizationStatusAuthorized) {
-//            
-//            return NO;
-//        }
-//    }
-//    return YES;
-//}
++ (void)LT_checkAuthorizationStatus:(void (^)(BOOL))resultBlock{
+    
+    if (resultBlock) {
+        
+        LTConAuthorizationStatus status = [self LT_getAuthorizationStatus];
+        if (status == LTConAuthorizationStatus_Authorized) {
+            
+            resultBlock(YES);
+        }
+        else{
+            
+            ABAddressBookRef addressBook = ABAddressBookCreateWithOptions(NULL, NULL);
+            ABAddressBookRequestAccessWithCompletion(addressBook, ^(bool granted, CFErrorRef error){
+                
+                if (error) {
+                    NSLog(@"Error: %@", (__bridge NSError *)error);
+                    resultBlock(NO);
+                }else if (granted) {
+                    resultBlock(YES);
+                }else {
+                    resultBlock(NO);
+                }
+                if (addressBook) {
+                    
+                    CFRelease(addressBook);
+                }
+            });
+        }
+    }
+}
 
 + (LTConAuthorizationStatus)LT_getAuthorizationStatus{
     

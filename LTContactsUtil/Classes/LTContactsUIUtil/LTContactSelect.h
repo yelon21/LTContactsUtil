@@ -10,8 +10,6 @@
 #import <UIKit/UIKit.h>
 
 @interface LTContactSelect : NSObject
-
-+ (BOOL)checkAuthorizationStatus;
     
 - (void)showAddressBookUIFromVC:(UIViewController *)viewCon
                       didSelect:(void(^)(NSString *name,NSArray *tels))didSelectPerson;

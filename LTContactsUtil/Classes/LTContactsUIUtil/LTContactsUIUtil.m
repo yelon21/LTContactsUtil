@@ -20,20 +20,6 @@
 
 @implementation LTContactsUIUtil
 
-+ (BOOL)checkAuthorizationStatus{
-
-    Class class = NSClassFromString(@"CNContactPickerViewController");
-    
-    if (class) {
-    
-        return [LTContactSelect checkAuthorizationStatus];
-    }
-    else{
-    
-        return [LTAddressBookSelect checkAuthorizationStatus];
-    }
-}
-
 - (void)showAddressBookUIFromVC:(UIViewController *)viewCon
                       didSelect:(void(^)(NSString *name,NSString *tel))didSelectPerson{
 
@@ -117,7 +103,6 @@
                                                         style:UIAlertActionStyleDefault
                                                       handler:^(UIAlertAction * _Nonnull action) {
                                                           
-                                                          NSLog(@"value =%@", dic[@"value"]);
                                                           [self didSelect:dic[@"title"]
                                                                       tel:dic[@"value"]];
                                                       }]];
@@ -129,7 +114,10 @@
                                                       
                                                   }]];
         
-        [viewCon presentViewController:alertVC animated:YES completion:nil];
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            
+            [viewCon presentViewController:alertVC animated:YES completion:nil];
+        });
     }
     else{
     
@@ -145,7 +133,11 @@
         }
         [sheet addButtonWithTitle:@"取消"];
         
-        [sheet showInView:viewCon.view];
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            
+            [sheet showInView:viewCon.view];
+        });
+        
     }
 }
 

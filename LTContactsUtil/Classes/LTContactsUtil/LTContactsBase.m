@@ -10,9 +10,11 @@
 
 @implementation LTContactsBase
 
-+ (BOOL)LT_checkAuthorizationStatus{
++ (void)LT_checkAuthorizationStatus:(void(^)(BOOL authorized))resultBlock;{
 
-    return NO;
+    if (resultBlock) {
+        resultBlock(NO);
+    }
 }
 
 + (LTConAuthorizationStatus)LT_getAuthorizationStatus{
